@@ -2,7 +2,8 @@
 package ru.iu3.backend.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +25,8 @@ public class Country {
 
     @Column(name = "name")
     public String name;
+    @JsonIgnore
     @OneToMany(mappedBy = "country")
-    public List artists = new ArrayList();
+    public List<Artist> artists = new ArrayList<Artist>();
 
 }

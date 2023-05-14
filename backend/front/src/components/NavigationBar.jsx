@@ -33,7 +33,7 @@ const NavigationBar = (props) => {
                     onClick={props.toggleSideBar}>
                 <FontAwesomeIcon icon={faBars} />
             </button>
-            <Navbar.Brand><FontAwesomeIcon icon={faHome} />{' '}My RPO</Navbar.Brand>
+            <Navbar.Brand>myRPO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

@@ -1,7 +1,7 @@
 
 package ru.iu3.backend.models;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "artists")
@@ -28,6 +28,3 @@ public class Artist {
     @JoinColumn(name = "countryid")
     public Country country;
 }
-
-
-

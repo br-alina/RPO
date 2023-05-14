@@ -36,6 +36,10 @@ public class User {
     @Column(name = "token")
     public String token;
 
+
+    @Transient
+    public String np;
+
     @Column(name = "activity")
     public LocalDateTime activity;
 
